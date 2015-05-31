@@ -4,9 +4,9 @@
 
 ## Purpose
 
-*GulPress* aims to make things easier when developing WordPress themes. It is based on [Gulp](http://gulpjs.com/) and supports Sass and ES6 (including new modules syntax).
+**GulPress** aims at making things easier when developing WordPress themes. It is based on [Gulp](http://gulpjs.com/) and supports Sass and ES6 (including new modules syntax).
 
-The good part is that *GulPress* can also be used on other projects as long as you respect its folders hierarchy!
+The good part is that **GulPress** can also be used on other projects as long as you respect its folders hierarchy!
 
 ## Installation
 
@@ -18,13 +18,15 @@ The good part is that *GulPress* can also be used on other projects as long as y
 
 ## Details
 
-*GulPress* is packed with a lot of goodies. Below is a list of all the things it will do for you:
+**GulPress** is packed with a lot of goodies. Below is a list of all the things it will do for you:
 
 - Livereload on PHP, JS files and images changes (requires [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) extension).
 - Sass files compilation
 - ES6 syntax support (including modules - recommended)
 - JPG, PNG, GIF and SVG optimization
-- JS tests with `gulp jshint`.
+- JS and CSS minification
+- JS tests with `gulp jshint`
+- Notifications system.
 
 ## Folders structure
 
