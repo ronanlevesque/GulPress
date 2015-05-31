@@ -20,7 +20,7 @@ The good part is that **GulPress** can also be used on other projects as long as
 
 **GulPress** is packed with a lot of goodies. Below is a list of all the things it will do for you:
 
-- Livereload on PHP, JS files and images changes (requires [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) extension).
+- Livereload on CSS, PHP, JS files and images changes (requires [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) extension)
 - Sass files compilation and autoprefix
 - ES6 syntax support (including modules - recommended)
 - JS sourcemaps
@@ -30,8 +30,6 @@ The good part is that **GulPress** can also be used on other projects as long as
 - Notifications system.
 
 ## Folders structure
-
-Please note, this can be easily changed inside `gulpfile.js` to match your preferences.
 
 <pre>yourtheme
 |&mdash; css
@@ -45,3 +43,5 @@ Please note, this can be easily changed inside `gulpfile.js` to match your prefe
 |  |&mdash; yourimages.*
 |&mdash; js
    |&mdash; yourscriptsminified.js</pre>
+
+Please note, this can be easily changed inside `gulpfile.js` to match your preferences.
