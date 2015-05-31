@@ -1,0 +1,119 @@
+// Mixins
+
+@mixin bp($point) {
+  @media screen and (min-width: $point / 16 + em) {
+    @content;
+  }
+}
+
+// Styles
+
+body {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 700px;
+  font-family: Georgia, serif;
+  color: #444;
+}
+
+h1 {
+  margin: 50px auto 0;
+  font-size: 50px;
+  text-align: center;
+
+  @include bp(1000) {
+    margin-top: 80px;
+    font-size: 70px;
+  }
+}
+
+h2 {
+  margin: 0 auto 50px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #aaa;
+
+  @include bp(1000) {
+    margin-bottom: 80px;
+    font-size: 15px;
+  }
+
+  &:after {
+    margin: 50px auto 0;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #ddd;
+
+    @include bp(1000) {
+      margin-top: 80px;
+      width: 70px;
+    }
+  }
+}
+
+p {
+  font-size: 14px;
+
+  @include bp(1000) {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: #444;
+}
+
+pre, code {
+  font-size: 12px;
+  background: #eee;
+  border: 1px solid #ddd;
+
+  @include bp(1000) {
+    font-size: 14px;
+  }
+}
+
+pre {
+  padding: 1em;
+}
+
+code {
+  padding: .1em .2em;
+}
+
+footer {
+  margin: 50px 0 30px;
+  padding-top: 30px;
+  font-style: italic;
+  text-align: center;
+  color: #999;
+  border-top: 2px solid #ddd;
+
+  @include bp(800) {
+    margin-top: 80px;
+  }
+
+  p {
+    margin: 0 0 .7em;
+    font-size: 12px;
+
+    @include bp(1000) {
+      font-size: 14px;
+    }
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+
+    @include bp(1000) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
