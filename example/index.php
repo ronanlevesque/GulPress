@@ -24,7 +24,7 @@
    |&mdash; yourscriptsminified.js</pre>
   <p>If you want to create a different structure, this can be easily customized inside <code>gulpfile.js</code>.</p>
   <p>--</p>
-  <p>You will find all the details about <strong>GulPress</strong> in the Github <a href="">Readme</a>.</p>
+  <p>You will find all the details about <strong>GulPress</strong> in the Github <a href="https://github.com/ronanlevesque/GulPress/blob/master/README.md">Readme</a>.</p>
   <footer>
     <p>Built with love by Ronan Levesque</p>
     <a href="http://ronanlevesque.fr"><img src="<?php bloginfo('template_directory'); ?>/img/logo-ronan-levesque.svg?" alt=""></a>
