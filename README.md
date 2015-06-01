@@ -8,15 +8,6 @@
 
 The good part is that **GulPress** can also be used on other projects as long as you respect its folders hierarchy!
 
-## Installation
-
-1. Launch your local server
-2. Download and unzip the folder in your WordPress themes folder
-3. Install npm from [Nodejs.org](https://nodejs.org/) and run `npm install` in your themes folder
-4. Run `gulp`
-5. Launch LiveReload extension
-6. ... And that's it! Enjoy a smooth development workflow :)
-
 ## Details
 
 **GulPress** is packed with a lot of goodies. Below is a list of all the things it will do for you:
@@ -29,6 +20,15 @@ The good part is that **GulPress** can also be used on other projects as long as
 - JS and CSS minification
 - JPG, PNG, GIF and SVG optimization
 - Notifications system.
+
+## Installation
+
+1. Launch your local server
+2. Download and unzip the folder in your WordPress themes folder
+3. Install npm from [Nodejs.org](https://nodejs.org/) and run `npm install` in your themes folder
+4. Run `gulp`
+5. Launch LiveReload extension
+6. ... And that's it! Enjoy a smooth development workflow :)
 
 ## Folders structure
 
