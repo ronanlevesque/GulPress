@@ -12,24 +12,26 @@ body {
   margin: 0 auto;
   padding: 0 16px;
   max-width: 700px;
-  font-family: Georgia, serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #444;
 }
 
+
 h1 {
   margin: 50px auto 0;
+  font-family: Georgia, serif;
   font-size: 50px;
   text-align: center;
 
   @include bp(1000) {
     margin-top: 80px;
-    font-size: 70px;
+    font-size: 69px;
   }
 }
 
 h2 {
   margin: 0 auto 50px;
-  font-family: Arial, sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 11px;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -58,6 +60,14 @@ h2 {
 
 p {
   font-size: 14px;
+
+  &:last-child {
+    &:before {
+      margin-bottom: 1em;
+      content: '--';
+      display: block;
+    }
+  }
 
   @include bp(1000) {
     font-size: 16px;
