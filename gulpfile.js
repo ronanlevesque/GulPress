@@ -98,7 +98,7 @@ gulp.task('jshint', function() {
 gulp.task('watch', function() {
   $$.livereload.listen();
 
-	gulp.watch(devSubFolder.sass + '**/*.scss', ['styles']);
+  gulp.watch(devSubFolder.sass + '**/*.scss', ['styles']);
   gulp.watch(devSubFolder.js + '**/*.js', ['scripts']);
   gulp.watch(distFolder.img + '**/*', ['images']);
   gulp.watch([themeFolder + '**/*.php', themeFolder + '**/*.css'], ['phpReload']);
