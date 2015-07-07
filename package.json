@@ -9,10 +9,11 @@
     "url": "http://ronanlevesque.fr"
   },
   "devDependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.3.0",
     "gulp-babel": "^5.1.0",
-    "gulp-es6-module-transpiler": "^0.2.1",
     "gulp-imagemin": "^2.2.1",
     "gulp-jshint": "^1.11.0",
     "gulp-livereload": "^3.8.0",
@@ -23,6 +24,8 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-svgo": "^0.1.1",
     "gulp-uglify": "^1.2.0",
-    "gulp-watch": "^4.2.4"
+    "gulp-watch": "^4.2.4",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

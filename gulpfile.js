@@ -1,4 +1,8 @@
 var gulp = require('gulp');
+var babelify = ('babelify');
+var browserify = ('browserify');
+var buffer = ('vinyl-buffer');
+var source = ('vinyl-source-stream');
 var $$ = require('gulp-load-plugins')();
 
 // Handle CLI errors
@@ -40,18 +44,21 @@ gulp.task('styles', function() {
 // Scripts
 
 gulp.task('scripts', function() {
-  return gulp.src(devSubFolder.js + 'main.js')
-  .pipe($$.es6ModuleTranspiler({
-    formatter: 'bundle',
-    basePath: devSubFolder.js
-  }))
-  .pipe($$.sourcemaps.init())
-  .pipe($$.babel())
+  var b = browserify({
+    entries: devSubFolder.js + 'main.js',
+    debug: true
+  })
+  .transform(babelify);
+
+  return b.bundle()
+  .pipe(source('bundle.js'))
+  .pipe(buffer())
+  .pipe($$.sourcemaps.init({loadMaps: true}))
   .on('error', $$.notify.onError("Error: <%= error.message %>"))
   .on('error', handleError)
   .pipe($$.uglify())
-  .pipe($$.sourcemaps.write('.'))
-  .pipe(gulp.dest(distFolder.js))
+  .pipe($$.sourcemaps.write('./'))
+  .pipe(gulp.dest(distFolder.js));
   .pipe($$.livereload())
 });
 
