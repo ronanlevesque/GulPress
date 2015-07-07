@@ -1,8 +1,8 @@
 var gulp = require('gulp');
-var babelify = ('babelify');
-var browserify = ('browserify');
-var buffer = ('vinyl-buffer');
-var source = ('vinyl-source-stream');
+var babelify = require('babelify');
+var browserify = require('browserify');
+var buffer = require('vinyl-buffer');
+var source = require('vinyl-source-stream');
 var $$ = require('gulp-load-plugins')();
 
 // Handle CLI errors

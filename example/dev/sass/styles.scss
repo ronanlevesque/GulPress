@@ -60,16 +60,16 @@ h2 {
 p {
   font-size: 14px;
 
-  &:last-child {
-    &:before {
-      margin-bottom: 1em;
-      content: '--';
-      display: block;
-    }
-  }
-
   @include bp(1000) {
     font-size: 16px;
+  }
+}
+
+article p:last-child {
+  &:before {
+    margin-bottom: 1em;
+    content: '--';
+    display: block;
   }
 }
 
