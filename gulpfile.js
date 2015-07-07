@@ -58,7 +58,7 @@ gulp.task('scripts', function() {
   .on('error', handleError)
   .pipe($$.uglify())
   .pipe($$.sourcemaps.write('./'))
-  .pipe(gulp.dest(distFolder.js));
+  .pipe(gulp.dest(distFolder.js))
   .pipe($$.livereload())
 });
 
