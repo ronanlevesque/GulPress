@@ -51,11 +51,11 @@ gulp.task('scripts', function() {
   .transform(babelify);
 
   return b.bundle()
+  .on('error', $$.notify.onError("Error: <%= error.message %>"))
+  .on('error', handleError)
   .pipe(source('bundle.js'))
   .pipe(buffer())
   .pipe($$.sourcemaps.init({loadMaps: true}))
-  .on('error', $$.notify.onError("Error: <%= error.message %>"))
-  .on('error', handleError)
   .pipe($$.uglify())
   .pipe($$.sourcemaps.write('./'))
   .pipe(gulp.dest(distFolder.js))
